@@ -10,6 +10,8 @@ import Photo7 from './images/photos/7.JPG';
 import Photo8 from './images/photos/8.JPG';
 import Photo9 from './images/photos/9.JPG';
 import Photo10 from './images/photos/10.JPG';
+import Photo11 from './images/photos/11.JPG';
+import Photo12 from './images/photos/12.JPG';
 
 const App = () => {
   const [cards, setCards] = useState([]);
@@ -70,6 +72,16 @@ const App = () => {
         name: 10,
         imageUrl: Photo10,
         matched: false
+      },
+      {
+        name: 11,
+        imageUrl: Photo11,
+        matched: false
+      },
+      {
+        name: 12,
+        imageUrl: Photo12,
+        matched: false
       }
     ];
     
@@ -123,9 +135,9 @@ const App = () => {
   return (
     <div className='container'>
       <p>Benvenuta al gioco di memoria di Jez & Micol</p>
-      <p>È un gioco di carte che richiede concentrazione e <strong>memoria</strong>, in cui dovrai accoppiare le carte.</p>
+      <p style={{ textAlign: 'center'}}>Trova le coppie di carte!</p>
       <button className='button' onClick={shuffleCards} disabled={newGameBtnDisabled}>New Game</button>
-      <p className='turns'>Turns: {turns}</p>
+      <p className='turns'>Turni: {turns}</p>
       <div className='card-grid'>
         {cards.map(card => (
           <SingleCard 
