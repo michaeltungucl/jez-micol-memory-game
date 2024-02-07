@@ -134,8 +134,8 @@ const App = () => {
 
   return (
     <div className='container'>
-      <p>Benvenuta al gioco di memoria di Jez & Micol</p>
-      <p style={{ textAlign: 'center'}}>Trova le coppie di carte!</p>
+      <p className='title'>Benvenuta al gioco di memoria di Jez & Micol</p>
+      <p>Trova le coppie di carte!</p>
       <button className='button' onClick={shuffleCards} disabled={newGameBtnDisabled}>New Game</button>
       <p className='turns'>Turni: {turns}</p>
       <div className='card-grid'>
